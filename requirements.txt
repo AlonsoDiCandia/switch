@@ -1,0 +1,13 @@
+#Django 
+django
+djangorestframework
+dj_database_url
+
+#Yeelight Api
+yeelight
+
+#Debbug with VSC
+ptvsd
+
+#Utils
+psycopg2
