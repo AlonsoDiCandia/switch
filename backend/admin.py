@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Bulb
 
-# Register your models here.
+@admin.register(Bulb)
+class BulbAdmin(admin.ModelAdmin):
+    pass

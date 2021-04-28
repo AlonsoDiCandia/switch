@@ -24,7 +24,6 @@ ADD requirements.txt /requirements.txt
 # Correct the path to your production requirements file, if needed.
 RUN set -ex \
     && BUILD_DEPS=" \
-        build-essential \
         libpcre3-dev \
         libpq-dev \
         binutils \
@@ -42,7 +41,9 @@ RUN set -ex \
     \
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $BUILD_DEPS \
     && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get -y install build-essential gcc
 
+RUN apt-get update && apt-get -y install nmap
 RUN mkdir /code/
 WORKDIR /code/
 ADD . /code/
