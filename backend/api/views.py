@@ -1,13 +1,18 @@
 import os,sys
 import json
-from yeelight import Bulb, discover_bulbs
+import subprocess
+from yeelight import Bulb
 
-
+from django.conf import settings
 from django.http import JsonResponse
 
 
 def TurnOnBulb(self, bulb):
-    bulb = Bulb("192.168.17.241")
+    if bulb == "central":
+        ip = "192.168.17.251"
+    elif bulb == "oficina":
+        ip = "192.168.17.241"
+    bulb = Bulb(ip)
     bulb.turn_on()
 
     return JsonResponse({
@@ -15,7 +20,11 @@ def TurnOnBulb(self, bulb):
         })
 
 def TurnOffBulb(self, bulb):
-    bulb = Bulb("192.168.17.241")
+    if bulb == "central":
+        ip = "192.168.17.251"
+    elif bulb == "oficina":
+        ip = "192.168.17.241"
+    bulb = Bulb(ip)
     bulb.turn_off()
     
     return JsonResponse({
@@ -23,7 +32,17 @@ def TurnOffBulb(self, bulb):
         })
 
 def DiscoverBulbs(self):
-    print(discover_bulbs(timeout=20, interface='192.168.17.0/24'))
+    with open(os.path.join(settings.BASE_DIR, "raspi", "scripts", "arp_scan.txt")) as f:
+        lines = f.readlines()
+    devices = [dev[:-1] for dev in lines if dev[:3] == "192"]
+    for a in devices[0]:
+        print(a)
+    for dev in devices:
+        try:
+            bulb = Bulb(dev)
+            print(dev, bulb.model)
+        except:
+            print(f"No bulb in {dev}")
     return JsonResponse({
-        "ok":"ok"
+        "devices": devices
         })
