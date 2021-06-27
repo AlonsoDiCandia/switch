@@ -1,7 +1,6 @@
 #include "ESP8266WiFi.h"
 #include "ESP8266HTTPClient.h"
 
-#define ledPin 2 // choose the pin for the LED 
 int switchPin = D5; // choose the input pin (for a pushbutton)
  
 const char* ssid = "Alkatonso"; //Enter SSID
@@ -20,15 +19,9 @@ void setup()
   while (WiFi.status() != WL_CONNECTED) 
   {
      delay(500);
-     Serial.print("*");
   }
   
-  Serial.println("");
-  Serial.println("WiFi connection Successful");
-  Serial.print("The IP Address of ESP8266 Module is: ");
-  Serial.print(WiFi.localIP());// Print the IP address
   
-  pinMode(ledPin, OUTPUT); // declare LED as output
   pinMode(switchPin, INPUT); // declare pushbutton as input
 }
 
@@ -39,14 +32,12 @@ void loop()
   
     if (lastState == LOW && currentState == HIGH)
     { // check if the input is HIGH (button released)
-      digitalWrite(ledPin, LOW); // turn LED OFF
-      http.begin("http://192.168.17.228:8000/api/apagar/oficina"); 
+      http.begin("http://192.168.17.223:8000/api/apagar/central"); 
       int httpResponseCode = http.GET();
     } 
     if (lastState == HIGH && currentState == LOW)
     {
-      digitalWrite(ledPin, HIGH); // turn LED ON } }
-      http.begin("http://192.168.17.228:8000/api/encender/oficina");
+      http.begin("http://192.168.17.223:8000/api/encender/central");
       int httpResponseCode = http.GET();
     }
   

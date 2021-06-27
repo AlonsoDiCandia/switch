@@ -20,6 +20,8 @@ RUN echo es_CL.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen
 
 ADD requirements.txt /requirements.txt
 
+RUN apt-get update && apt-get -y install build-essential gcc net-tools nmap
+
 # Install build deps, then run `pip install`, then remove unneeded build deps all in a single step.
 # Correct the path to your production requirements file, if needed.
 RUN set -ex \
@@ -41,12 +43,11 @@ RUN set -ex \
     \
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $BUILD_DEPS \
     && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get -y install build-essential gcc
 
-RUN apt-get update && apt-get -y install nmap
 RUN mkdir /code/
 WORKDIR /code/
 ADD . /code/
+# RUN cd raspi/scripts && chmod 755 nmap_scan.sh
 
 RUN find . -name "*.pyc" -type f -delete
 RUN find . -name "__pycache__" -type f -delete

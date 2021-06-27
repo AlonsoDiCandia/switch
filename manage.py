@@ -9,11 +9,12 @@ def main():
 
     if settings.DEBUG:
         if os.environ.get('RUN_MAIN'):
-            import ptvsd
+            if os.environ.get('DEBUG'):
+                import ptvsd
 
-            ptvsd.enable_attach(address=('0.0.0.0', 3000))
-            ptvsd.wait_for_attach()
-            print('Attached!')
+                ptvsd.enable_attach(address=('0.0.0.0', 3000))
+                ptvsd.wait_for_attach()
+                print('Attached!')
             
     try:
         from django.core.management import execute_from_command_line

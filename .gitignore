@@ -1,0 +1,3 @@
+*.pyc
+.DS_Store
+switch/__pycache__/settings.cpython-37.pyc
