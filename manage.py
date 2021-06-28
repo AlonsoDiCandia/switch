@@ -9,7 +9,7 @@ def main():
 
     if settings.DEBUG:
         if os.environ.get('RUN_MAIN'):
-            if os.environ.get('DEBUG'):
+            if os.environ.get('VSC_DEBUG'):
                 import ptvsd
 
                 ptvsd.enable_attach(address=('0.0.0.0', 3000))
