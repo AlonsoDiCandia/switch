@@ -11,5 +11,8 @@ class Bulb(models.Model):
     port = models.IntegerField()
     power = models.BooleanField(default=False)
 
+    def __str__(self):
+        return self.name
+
     
 

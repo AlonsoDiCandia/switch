@@ -7,14 +7,12 @@ from django.conf import settings
 def main():
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "switch.settings")
 
-    if settings.DEBUG:
-        if os.environ.get('RUN_MAIN'):
-            if os.environ.get('VSC_DEBUG'):
-                import ptvsd
+    if settings.DEBUG and False:
+        import ptvsd
 
-                ptvsd.enable_attach(address=('0.0.0.0', 3000))
-                ptvsd.wait_for_attach()
-                print('Attached!')
+        ptvsd.enable_attach(address=('0.0.0.0', 3000))
+        ptvsd.wait_for_attach()
+        print('Attached!')
             
     try:
         from django.core.management import execute_from_command_line

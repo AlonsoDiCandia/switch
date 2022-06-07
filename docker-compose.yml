@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    container_name: web_switch
+    container_name: switch_web
     restart: always
     build: .
     command: python manage.py runserver 0.0.0.0:8000
@@ -11,20 +11,19 @@ services:
     volumes: 
       - .:/code/
     ports: 
-      - "3000:3000"
-      - "8000:8000"
+      - "5050:3000"
+      - "5051:8000"
   
   db:
-    container_name: db_switch
+    container_name: switch_db
     restart: always
     image: postgres:13
     ports: 
-      - "5432:5432"
+      - "5052:5432"
     env_file:
       - ./.env
 
 networks:
   default:
-    external:
-      name: shared
+    name: shared
 

@@ -2,17 +2,12 @@
 from django.urls import path
 
 from .views import (
-    TurnOnBulb,
-    TurnOffBulb,
+    TurnOnOffBulb,
     change_brightness,
-    DiscoverBulbs,
     )
 
 urlpatterns = [
-    path('apagar/<str:bulb>', TurnOffBulb),
-    path('encender/<str:bulb>', TurnOnBulb),
+    path('power/<str:bulb>', TurnOnOffBulb),
 
     path('brillo/<str:bulb>/<int:brightness>', change_brightness),
-
-    path('buscar-luces', DiscoverBulbs),
 ]

@@ -2,21 +2,32 @@ import os,sys
 import json
 import subprocess
 from yeelight import Bulb
+from backend.models import Bulb as myBulb
 
 from django.conf import settings
 from django.http import JsonResponse
 
 
-def TurnOnBulb(request, bulb):
-    if bulb == "central":
-        ip = "192.168.17.251"
-    elif bulb == "oficina":
-        ip = "192.168.17.241"
-    bulb = Bulb(ip)
-    bulb.turn_on()
+def TurnOnOffBulb(request, bulb):
+    my_bulb = myBulb.objects.get(name=bulb)
+    bulb = Bulb(my_bulb.ip)
+    properties = bulb.get_properties()
+    bulb_status = properties['power']
+
+    if bulb_status == 'on':
+        bulb.turn_off()
+        bulb_status = 'off'
+    elif bulb_status == 'off':
+        bulb.turn_on()
+        bulb_status = 'on'
+    else:
+        return JsonResponse({
+            "error": "No se pudo determinar el estado de la ampolleta."
+        })
 
     return JsonResponse({
-        "ok":"ok"
+        "status": bulb_status,
+        "ok": "ok"
         })
 
 def TurnOffBulb(request, bulb):

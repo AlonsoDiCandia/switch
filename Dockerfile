@@ -20,8 +20,6 @@ RUN echo es_CL.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen
 
 ADD requirements.txt /requirements.txt
 
-RUN apt-get update && apt-get -y install build-essential gcc net-tools nmap
-
 # Install build deps, then run `pip install`, then remove unneeded build deps all in a single step.
 # Correct the path to your production requirements file, if needed.
 RUN set -ex \
@@ -51,5 +49,3 @@ ADD . /code/
 
 RUN find . -name "*.pyc" -type f -delete
 RUN find . -name "__pycache__" -type f -delete
-
-EXPOSE 80

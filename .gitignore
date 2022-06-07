@@ -1,3 +1,8 @@
 *.pyc
 .DS_Store
 switch/__pycache__/settings.cpython-37.pyc
+switch/__pycache__/__init__.cpython-37.pyc
+switch/__pycache__/wsgi.cpython-37.pyc
+.gitignore
+switch/__pycache__/settings.cpython-37.pyc
+logs/mylogs.log
