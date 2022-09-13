@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  web:
+  switch_web:
     container_name: switch_web
     restart: always
     build: .
@@ -14,12 +14,12 @@ services:
       - "5050:3000"
       - "5051:8000"
   
-  db:
+  switch_db:
     container_name: switch_db
     restart: always
-    image: postgres:13
-    ports: 
-      - "5052:5432"
+    image: postgres:14.3
+    # ports: 
+    #   - "5052:5432"
     env_file:
       - ./.env
 

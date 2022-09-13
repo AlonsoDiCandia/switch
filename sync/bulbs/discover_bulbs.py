@@ -9,6 +9,7 @@ from yeelight import discover_bulbs
 
 
 bulbs = { "bulbs": discover_bulbs()}
+print(bulbs)
 
 json_file = open("./sync/bulbs/bulbs.json", "w")
 json_file.write(str(bulbs).replace("\'", "\""))

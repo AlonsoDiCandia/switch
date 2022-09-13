@@ -229,3 +229,1945 @@ Watching for file changes with StatReloader
 "GET /api/power/oficina HTTP/1.1" 200 28
 "GET /api/power/oficina HTTP/1.1" 200 29
 "GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "switch" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 431, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: FATAL:  database "switch" does not exist
+
+"GET /api/power/oficina HTTP/1.1" 500 160460
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "switch" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 431, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: FATAL:  database "switch" does not exist
+
+"GET /api/power/oficina HTTP/1.1" 500 160460
+"GET /api/power/oficina HTTP/1.1" 200 29
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/code/switch/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/code/switch/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/code/switch/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/code/switch/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "switch_db" to address: Name or service not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 431, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not translate host name "switch_db" to address: Name or service not known
+
+"GET /api/power/oficina HTTP/1.1" 500 161318
+"GET /api/power/oficina HTTP/1.1" 200 28
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/oficina HTTP/1.1" 500 95576
+Internal Server Error: /api/power/dormitorio
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/dormitorio HTTP/1.1" 500 95612
+Internal Server Error: /api/power/dormitorio
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/dormitorio HTTP/1.1" 500 95391
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/oficina HTTP/1.1" 500 95355
+Internal Server Error: /api/power/dormitorio
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/dormitorio HTTP/1.1" 500 95391
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/oficina HTTP/1.1" 500 95355
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/oficina HTTP/1.1" 500 95426
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/oficina HTTP/1.1" 500 95426
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/oficina HTTP/1.1" 500 95426
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/oficina HTTP/1.1" 500 95426
+Internal Server Error: /api/power/comedor
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/comedor HTTP/1.1" 500 95426
+Internal Server Error: /api/power/dormitorio
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/dormitorio HTTP/1.1" 500 95462
+Internal Server Error: /api/power/dormitorio
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/dormitorio HTTP/1.1" 500 95462
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/oficina HTTP/1.1" 500 95426
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+Internal Server Error: /api/power/comedor
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "switch_db" to address: Name or service not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 431, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not translate host name "switch_db" to address: Name or service not known
+
+"GET /api/power/comedor HTTP/1.1" 500 161073
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 29
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "switch_db" to address: Name or service not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 431, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not translate host name "switch_db" to address: Name or service not known
+
+"GET /api/power/oficina HTTP/1.1" 500 161318
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 6057
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/backend/bulb/ HTTP/1.1" 200 6694
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/logout/ HTTP/1.1" 200 1529
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/code/manage.py changed, reloading.
+Watching for file changes with StatReloader
+/code/manage.py changed, reloading.
+Watching for file changes with StatReloader
+/code/manage.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+/code/manage.py changed, reloading.
+Watching for file changes with StatReloader
+/code/manage.py changed, reloading.
+Watching for file changes with StatReloader
+/code/manage.py changed, reloading.
+Watching for file changes with StatReloader
+/code/manage.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+Watching for file changes with StatReloader
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+Not Found: /admi
+"GET /admi HTTP/1.1" 404 2193
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2376
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2376
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2376
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2376
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2376
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2375
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "switch_db" to address: Name or service not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 414, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/contrib/auth/views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/edit.py", line 141, in post
+    if form.is_valid():
+  File "/usr/local/lib/python3.7/site-packages/django/forms/forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "/usr/local/lib/python3.7/site-packages/django/forms/forms.py", line 170, in errors
+    self.full_clean()
+  File "/usr/local/lib/python3.7/site-packages/django/forms/forms.py", line 373, in full_clean
+    self._clean_form()
+  File "/usr/local/lib/python3.7/site-packages/django/forms/forms.py", line 400, in _clean_form
+    cleaned_data = self.clean()
+  File "/usr/local/lib/python3.7/site-packages/django/contrib/auth/forms.py", line 202, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 76, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/usr/local/lib/python3.7/site-packages/django/contrib/auth/backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/usr/local/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 45, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 431, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not translate host name "switch_db" to address: Name or service not known
+
+"POST /admin/login/?next=/admin/ HTTP/1.1" 500 254883
+Internal Server Error: /api/power/oficina
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+backend.models.Bulb.DoesNotExist: Bulb matching query does not exist.
+"GET /api/power/oficina HTTP/1.1" 500 66030
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+Internal Server Error: /api/power/dormitorio
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+backend.models.Bulb.DoesNotExist: Bulb matching query does not exist.
+"GET /api/power/dormitorio HTTP/1.1" 500 66072
+Internal Server Error: /api/power/comedor
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+backend.models.Bulb.DoesNotExist: Bulb matching query does not exist.
+"GET /api/power/comedor HTTP/1.1" 500 66030
+Internal Server Error: /api/power/comedor
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+backend.models.Bulb.DoesNotExist: Bulb matching query does not exist.
+"GET /api/power/comedor HTTP/1.1" 500 66030
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2376
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2376
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 3972
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/backend/bulb/ HTTP/1.1" 200 4926
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/backend/bulb/ HTTP/1.1" 200 6670
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+/code/backend/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/code/manage.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/code/backend/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2163
+"GET /admin/ HTTP/1.1" 200 3972
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7262
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+/code/backend/admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7262
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7754
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+"POST /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7502
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/backend/bulb/fa5dee3c-a1c1-4679-bea6-abb16f2ce328/change/ HTTP/1.1" 200 7754
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/backend/bulb/fa5dee3c-a1c1-4679-bea6-abb16f2ce328/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7509
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/backend/bulb/87ff6e16-d770-4ffd-ad98-32121667eaf7/change/ HTTP/1.1" 200 7754
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/backend/bulb/87ff6e16-d770-4ffd-ad98-32121667eaf7/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7522
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/comedor HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+Watching for file changes with StatReloader
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 4968
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/comedor HTTP/1.1" 200 29
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/comedor HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 4968
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7286
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+"POST /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7519
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /api/power/comedor HTTP/1.1" 200 29
+"GET /api/power/comedor HTTP/1.1" 200 28
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7520
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/backend/bulb/fa5dee3c-a1c1-4679-bea6-abb16f2ce328/change/ HTTP/1.1" 200 7803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/backend/bulb/fa5dee3c-a1c1-4679-bea6-abb16f2ce328/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7520
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7804
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"POST /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7519
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /api/power/comedor HTTP/1.1" 200 29
+"GET /api/power/comedor HTTP/1.1" 200 28
+"GET /admin/backend/bulb/87ff6e16-d770-4ffd-ad98-32121667eaf7/change/ HTTP/1.1" 200 7815
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"POST /admin/backend/bulb/87ff6e16-d770-4ffd-ad98-32121667eaf7/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7522
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7519
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Internal Server Error: /api/power/comedor
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/comedor HTTP/1.1" 500 95600
+Internal Server Error: /api/power/comedor
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/comedor HTTP/1.1" 500 95600
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"POST /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7519
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"GET /api/power/comedor HTTP/1.1" 200 29
+"GET /api/power/comedor HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+Internal Server Error: /api/power/dormitorio
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/dormitorio HTTP/1.1" 500 95565
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+Internal Server Error: /api/power/dormitorio
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/dormitorio HTTP/1.1" 500 95636
+"GET /api/power/comedor HTTP/1.1" 200 28
+Internal Server Error: /api/power/dormitorio
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 789, in send_command
+    self._socket.send(request)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 501, in _socket
+    self.__socket.connect((self._ip, self._port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 14, in TurnOnOffBulb
+    properties = bulb.get_properties()
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 759, in get_properties
+    response = self.send_command("get_prop", requested_properties)
+  File "/usr/local/lib/python3.7/site-packages/yeelight/main.py", line 799, in send_command
+    BulbException("A socket error occurred when sending the command."), ex
+  File "/usr/local/lib/python3.7/site-packages/future/utils/__init__.py", line 403, in raise_from
+    exec(execstr, myglobals, mylocals)
+  File "<string>", line 1, in <module>
+yeelight.main.BulbException: A socket error occurred when sending the command.
+"GET /api/power/dormitorio HTTP/1.1" 500 95636
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /admin/ HTTP/1.1" 200 7211
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7286
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/backend/bulb/87ff6e16-d770-4ffd-ad98-32121667eaf7/change/ HTTP/1.1" 200 7815
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"POST /admin/backend/bulb/87ff6e16-d770-4ffd-ad98-32121667eaf7/change/ HTTP/1.1" 302 0
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7522
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+Watching for file changes with StatReloader
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+/code/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/api/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/api/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7214
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/backend/bulb/ HTTP/1.1" 200 7286
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+/code/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/power/comedor HTTP/1.1" 200 28
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /api/power/comedor HTTP/1.1" 200 29
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+/code/backend/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/api/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/backend/bulb/fbe0de10-b35b-4570-b6d5-56d93d67b6cb/change/ HTTP/1.1" 200 7803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+Internal Server Error: /api/power/all
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+backend.models.Bulb.DoesNotExist: Bulb matching query does not exist.
+"GET /api/power/all HTTP/1.1" 500 66533
+Internal Server Error: /api/power/all
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+backend.models.Bulb.DoesNotExist: Bulb matching query does not exist.
+"GET /api/power/all HTTP/1.1" 500 66533
+Internal Server Error: /api/power/all
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+backend.models.Bulb.DoesNotExist: Bulb matching query does not exist.
+"GET /api/power/all HTTP/1.1" 500 66533
+Internal Server Error: /api/power/all
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views.py", line 12, in TurnOnOffBulb
+    my_bulb = myBulb.objects.get(name=bulb)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+backend.models.Bulb.DoesNotExist: Bulb matching query does not exist.
+"GET /api/power/all HTTP/1.1" 500 66533
+"GET /api/power/oficina HTTP/1.1" 200 28
+/code/backend/api/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/comedor HTTP/1.1" 200 29
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/oficina HTTP/1.1" 200 29
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2218
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+Forbidden (CSRF cookie not set.): /api/power/all
+"POST /api/power/all HTTP/1.1" 403 2870
+Forbidden (CSRF cookie not set.): /api/power/all
+"POST /api/power/all HTTP/1.1" 403 2870
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 28
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/comedor HTTP/1.1" 200 29
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+Watching for file changes with StatReloader
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/comedor HTTP/1.1" 200 29
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+Watching for file changes with StatReloader
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+Watching for file changes with StatReloader
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/oficina HTTP/1.1" 200 28
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+/code/switch/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/code/switch/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/code/switch/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/code/switch/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+"GET /api/power/all HTTP/1.1" 200 54
+/code/backend/api/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/models/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2219
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2381
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7219
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+/code/backend/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 7637
+"GET /admin/backend/house/ HTTP/1.1" 200 5546
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/backend/house/add/ HTTP/1.1" 200 6846
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+"POST /admin/backend/house/add/ HTTP/1.1" 302 0
+"GET /admin/backend/house/ HTTP/1.1" 200 7462
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2214
+"GET /admin/backend/house/fbfe9cf2-38a0-4ddf-bfc1-92565fef697a/change/ HTTP/1.1" 200 7353
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+/code/backend/api/views/bulbs/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/api/views/bulbs/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/api/views/bulbs/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/api/views/bulbs/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/power/oficina HTTP/1.1" 200 29
+"GET /api/power/oficina HTTP/1.1" 200 28
+Internal Server Error: /api/power/all
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views/bulbs/views.py", line 37, in TurnOnAllBulbs
+    sunset_info = sunset.get_sunset_info()
+  File "/code/backend/synchronizer/sunset/SunsetSynchronizer.py", line 13, in get_sunset_info
+    body = response.json()
+  File "/usr/local/lib/python3.7/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /api/power/all HTTP/1.1" 500 84178
+Internal Server Error: /api/power/all
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views/bulbs/views.py", line 37, in TurnOnAllBulbs
+    sunset_info = sunset.get_sunset_info()
+  File "/code/backend/synchronizer/sunset/SunsetSynchronizer.py", line 13, in get_sunset_info
+    body = response.json()
+  File "/usr/local/lib/python3.7/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /api/power/all HTTP/1.1" 500 84178
+"GET /api/power/dormitorio HTTP/1.1" 200 29
+Internal Server Error: /api/power/all
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/backend/api/views/bulbs/views.py", line 37, in TurnOnAllBulbs
+    sunset_info = sunset.get_sunset_info()
+  File "/code/backend/synchronizer/sunset/SunsetSynchronizer.py", line 13, in get_sunset_info
+    body = response.json()
+  File "/usr/local/lib/python3.7/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /api/power/all HTTP/1.1" 500 84178
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/synchronizer/sunset/SunsetSynchronizer.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/api/views/bulbs/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/backend/api/views/bulbs/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/power/all HTTP/1.1" 200 54

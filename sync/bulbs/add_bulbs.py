@@ -10,7 +10,7 @@ from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
 
 import json 
-from backend.models import Bulb
+from backend.models.models import Bulb
 
 json_file = open("./sync/bulbs/bulbs.json", "r")
 

@@ -14,5 +14,13 @@ class Bulb(models.Model):
     def __str__(self):
         return self.name
 
+class House(models.Model):
+    uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    name = models.CharField(max_length=50)
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+
+
+
     
 

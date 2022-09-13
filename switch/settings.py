@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'switch.wsgi.application'
 import dj_database_url
 
 DATABASES = {
-  'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+  'default': dj_database_url.config(default=os.getenv('SWITCH_DATABASE_URL'))
 }
 
 
@@ -108,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Santiago'
 
 USE_I18N = True
 

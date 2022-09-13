@@ -11,3 +11,4 @@ ptvsd
 
 #Utils
 psycopg2
+requests
