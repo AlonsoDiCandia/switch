@@ -45,6 +45,9 @@ def TurnOnAllBulbs(request):
         for _bulb in bulbs:
             bulb = Bulb(_bulb.ip)
             bulb.turn_on()
+            bulb.set_rgb(248, 248, 255)
+            bulb.set_brightness(70)
+            
 
             properties = bulb.get_properties()
             bulb_status = properties['power']
